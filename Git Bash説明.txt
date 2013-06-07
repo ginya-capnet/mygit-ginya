@@ -1,0 +1,76 @@
+GitBashの説明（インストール方法）
+http://albatrosary.hateblo.jp/entry/2013/06/06/114116
+
+
+$ git add .
+$ git commit -m "added files"
+$ git push origin master
+$ git pull
+
+
+===============================
+解説
+===============================
+$ git add . //更新ファイル全てをaddする。
+$ git add ファイル名 // 指定ファイルをaddする（「.」は入れない。）
+
+
+
+
+ginya@GINYA-7 ~
+$ vi ~/.ssh/id_rsa.pub
+
+ginya@GINYA-7 ~
+$ git clone git@github.com:caplab/newnavi-doc.git
+Cloning into 'newnavi-doc'...
+warning: You appear to have cloned an empty repository.
+
+ginya@GINYA-7 ~
+$ cd newnavi-doc/
+
+ginya@GINYA-7 ~/newnavi-doc (master)
+$ ls -la
+total 8
+drwxr-xr-x    1 ginya    Administ        0 Jun  7 15:43 .
+drwxr-xr-x    1 ginya    Administ    12288 Jun  7 15:43 ..
+drwxr-xr-x    9 ginya    Administ     4096 Jun  7 15:43 .git
+
+ginya@GINYA-7 ~/newnavi-doc (master)
+$ pwd
+/c/Users/ginya/newnavi-doc
+
+ginya@GINYA-7 ~/newnavi-doc (master)
+$ pwd
+/c/Users/ginya/newnavi-doc
+
+ginya@GINYA-7 ~/newnavi-doc (master)
+$ git add .
+warning: CRLF will be replaced by LF in JavaScriptお勉強(ドットインストール).txt
+.
+The file will have its original line endings in your working directory.
+
+ginya@GINYA-7 ~/newnavi-doc (master)
+$ git commit -m "added files"
+[master (root-commit) 4ea0939] added files
+warning: CRLF will be replaced by LF in JavaScriptお勉強(ドットインストール).txt
+.
+The file will have its original line endings in your working directory.
+ 1 file changed, 373 insertions(+)
+ create mode 100644 "JavaScript\343\201\212\345\213\211\345\274\267(\343\203\211
+\343\203\203\343\203\210\343\202\244\343\203\263\343\202\271\343\203\210\343\203
+\274\343\203\253).txt"
+
+ginya@GINYA-7 ~/newnavi-doc (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.95 KiB | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:caplab/newnavi-doc.git
+ * [new branch]      master -> master
+
+ginya@GINYA-7 ~/newnavi-doc (master)
+$
+
+
